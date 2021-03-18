@@ -1,16 +1,9 @@
 // Only change code below this line
 function myMutation(arr) {
-  for (var i = 0; i < arr[1].length; i++) {
-    var slovoDrStr = arr[1].charAt(i);
-    var slovoPostoji = false;
-    for (var j = 0; j < arr[0].length; j++) {
-      var slovoPrStr = arr[0].charAt(j);
-
-      if (slovoPrStr.toLowerCase() == slovoDrStr.toLowerCase()) {
-        slovoPostoji = true;
-      }
-    }
-    if (slovoPostoji == false) {
+  var firstStr = arr[0].toLowerCase();
+  var secondStr = arr[1].toLowerCase();
+  for (var i = 0; i < secondStr.length; i++) {
+    if (firstStr.indexOf(secondStr[i]) === -1) {
       return false;
     }
   }
