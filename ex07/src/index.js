@@ -8,7 +8,7 @@ function largestNumFromArr(arr) {
         maxNumber = arr[i][j];
       }
     }
-    maxNumArray[i] = maxNumber;
+    maxNumArray.push(maxNumber);
   }
   return maxNumArray;
 }
