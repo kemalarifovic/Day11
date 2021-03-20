@@ -1,10 +1,12 @@
 // Only change code below this line
 function splitArrayInGroups(arr, n) {
-  var newArr = [];
-  for (var i = 0; i < arr.length; i += n) {
-    newArr.push(arr.slice(i, i + n));
+  var result = [];
+  var newLength = n * n;
+
+  for (var i = 0; i < newLength; i += n) {
+    result.push(arr.slice(i, i + n));
   }
-  return newArr;
+  return result;
 }
 
 // Only change code above this line
