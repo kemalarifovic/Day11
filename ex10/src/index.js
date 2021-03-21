@@ -1,12 +1,11 @@
 // Only change code below this line
 function mySplice(arr1, arr2, n) {
-  var myNewArr = [...arr2];
-  var myInvArr = [];
+    var myInvArr = [];
   for (var i = 0; i < arr1.length; i++) {
     myInvArr[i] = arr1[arr1.length - 1 - i];
   }
-    myNewArr.splice(n, 0, ...myInvArr);
-  return myNewArr;
+    arr2.splice(n, 0, ...myInvArr);
+  return arr2;
 }
 // Only change code above this line
 
